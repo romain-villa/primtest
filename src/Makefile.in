@@ -16,11 +16,7 @@ primtest.o: main.c *.h
 %.o: %.c %.h
 	$(CC) $(CFLAGS) $< 
 
-DOSSIER = IN603_AMMAD_Massina_VILLA_Romain
-CF = config
-
 clean:
-	rm -f $(DOSSIER).zip
 	rm -f $(OBJS)
 	rm -f primtest
 	ls -l
