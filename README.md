@@ -58,9 +58,11 @@ Ce test est basé sur les mêmes propriétés que le premier, mais repose sur la
 
 > n-1 = 2<sup>s</sup>t avec t impair.
 
-> exemple avec n = 13 
-> n-1 = 12 = 2<sup>2</sup>3
-> s = 2 et t = 3.
+> exemple avec n = 13
+> 
+>> n-1 = 12 = 2<sup>2</sup>3
+>> 
+>> s = 2 et t = 3.
 
 > Comme décrit, ces tests reposent sur l'exponentiation modulaire de a, d'où la nécessité de l'algorithme *Square and multiply* qui utilise la représentation binaire de l'exposant et réduit considérablement la complexité du calcul par rapport à une implémentation plus naïve.
 
