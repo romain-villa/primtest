@@ -38,8 +38,8 @@ int main(int argc, char** argv){
     
     printf("\n >>>>>>>>>>>TEST DE FERMAT<<<<<<<<<<\n");
     
-    if(mpz_cmp_ui(n,4)<0){
-        printf("\nNombre saisi inférieur a 4, le test de Fermat ne peut pas être exécuté.\n");
+    if(mpz_cmp_ui(n,4)<=0){
+        printf("\nNombre saisi inférieur ou égal a 4, le test de Fermat ne peut pas être exécuté.\n");
         goto MILLER_RABIN;
     }
 
