@@ -50,6 +50,6 @@ Ce nombre peut être modifié dans le fichier ```main.c``` en changeant la défi
 
 ### Test de Fermat
 
-Ce test, basé sur le Petit théorème de Fermat, vise à vérifier si un nombre aléatoire a porté à la puissance n-1 modulo n est congru à 1 ou non. S'il ne l'est pas, on peut conclure que n est composé avec certitude. Dans le cas contraire, le test renvoie que n est premier avec une probabilité estimée a 1/2. Ainsi, pour k itérations, la probabilité que le test se trompe s'élève à 1/ 2^k^.
+Ce test, basé sur le Petit théorème de Fermat, vise à vérifier si un nombre aléatoire a porté à la puissance n-1 modulo n est congru à 1 ou non. S'il ne l'est pas, on peut conclure que n est composé avec certitude. Dans le cas contraire, le test renvoie que n est premier avec une probabilité estimée a 1/2. Ainsi, pour k itérations, la probabilité que le test se trompe s'élève à 1/2<sup>k</sup>
 
 
