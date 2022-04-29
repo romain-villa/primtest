@@ -15,11 +15,13 @@ Tout l'intérêt du programme est de pouvoir tester la primalité de grands nomb
 
 L'utilisateur doit disposer du compilateur GCC et avoir installé la librairie [GMP 6.2.1](https://gmplib.org/).
 Pour installer le programme, il faut décompresser l'archive et suivre les étapes suivantes :
-> ```./configure```
+ ```
+ ./configure
 
-> ```cd src```
+cd src
 
-> ```make```
+make
+```
 
 Pour l'éxécuter:
 
