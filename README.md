@@ -64,7 +64,11 @@ Ce test est basé sur les mêmes propriétés que le premier, mais repose sur la
 >> 
 >> s = 2 et t = 3.
 
-> Comme décrit, ces tests reposent sur l'exponentiation modulaire de a, d'où la nécessité de l'algorithme *Square and multiply* qui utilise la représentation binaire de l'exposant et réduit considérablement la complexité du calcul par rapport à une implémentation plus naïve.
+Le paramètre t permet de calculer l'exponention modulaire a<sup>t</sup> et s permet l'optimisation de l'algorithme si le nombre est composé.
+Par les mêmes propriétés que le test de Fermat, si le test renvoie composé la probabilité qu'il se trompe vaut 0. Si, en revanche, le test renvoie premier, la probabilité estimée que le test se trompe s'élève également à 1/4<sup>k</sup> (valeur probablement sur-estimée).
+
+> Comme décrit, ces deux tests reposent sur l'exponentiation modulaire de a, d'où l'aspect fondamental de l'algorithme *square and multiply* qui utilise la représentation binaire de l'exposant et réduit considérablement la complexité du calcul par rapport à une implémentation plus naïve.
+
 
 
 
