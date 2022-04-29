@@ -23,8 +23,7 @@ cd src
 make
 ```
 
-Pour l'éxécuter:
+## Exécution
 
-> ```./primtest n k```
-
+```./primtest n k```
 *avec n le nombre à tester et k le nombre d'itérations des algorithmmes*
