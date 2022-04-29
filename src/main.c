@@ -49,7 +49,6 @@ int main(int argc, char** argv){
         gmp_printf("\nLe nombre %Zd est composé.\n",n);}
         else {
             gmp_printf("\nLe nombre %Zd est probablement premier.\n",n);}
-    printf("Lors des %d itérations, l'algorithme a retourné %d fois 'nombre composé'.\n",k,k-cpt);
 
     MILLER_RABIN: printf("\n >>>>>>>TEST DE MILLER-RABIN<<<<<<<<\n");
     
@@ -66,12 +65,10 @@ int main(int argc, char** argv){
         gmp_printf("\nLe nombre %Zd est probablement premier.\n",n);}
         else {
             gmp_printf("\nLe nombre %Zd est composé.\n",n);}
-    printf("Lors des %d itérations, l'algorithme a retourné %d fois 'nombre composé'.\n",k,cpt);
 
     mpz_clear(n);
     clock_t end = clock();
     ex_time(begin,end);
-
 
 exit(EXIT_SUCCESS);
 }
