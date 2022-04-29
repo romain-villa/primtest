@@ -13,17 +13,31 @@ Tout l'intérêt du programme est de pouvoir tester la primalité de grands nomb
 
 ## Installation
 
-L'utilisateur doit disposer du compilateur GCC et avoir installé la librairie [GMP 6.2.1](https://gmplib.org/).
+L'utilisateur doit disposer du compilateur GCC et avoir installé la librairie [GMP 6.2.1](https://gmplib.org/) et disposer d'une distribution UNIX.
 Pour installer le programme, il faut décompresser l'archive et suivre les étapes suivantes :
  ```
- ./configure
+~/primest$ ./configure
 
-cd src
+~/primest$ cd src
 
-make
+~/primest/src$ make
 ```
 
 ## Exécution
 
-```./primtest n k```
+```
+~/primest/src$ ./primtest n k
+```
 *avec n le nombre à tester et k le nombre d'itérations des algorithmmes*
+
+### Contraintes
+
+- contraintes sur n :
+
+Pour que le test de Fermat s'exécute, n doit être supérieur à 4 tandis que pour le test de Miller-Rabin, n doit nécessairement être impair.
+Ces deux contraintes n'empêchent pas l'exécution du programme car elles se compensent selon l'algorithme. 
+
+- contraintes sur k :
+
+Par défaut, le nombre k d'itérations doit être supérieur ou égal à 10.
+Ce nombre peut être modifié dans le fichier ```main.c``` en changeant la définition de la macro ```ÌT_MIN```.
