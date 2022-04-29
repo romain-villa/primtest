@@ -50,6 +50,20 @@ Ce nombre peut être modifié dans le fichier ```main.c``` en changeant la défi
 
 ### Test de Fermat
 
-Ce test, basé sur le Petit théorème de Fermat, vise à vérifier si un nombre aléatoire a porté à la puissance n-1 modulo n est congru à 1 ou non. S'il ne l'est pas, on peut conclure que n est composé avec certitude. Dans le cas contraire, le test renvoie que n est premier avec une probabilité estimée a 1/2. Ainsi, pour k itérations, la probabilité que le test se trompe s'élève à 1/2<sup>k</sup>.
+Ce test, basé sur le Petit théorème de Fermat, vise à vérifier si un nombre aléatoire a porté à la puissance n-1 modulo n est congru à 1 ou non. S'il ne l'est pas, on peut conclure que n est composé avec certitude. Dans le cas contraire, le test renvoie que n est premier avec une probabilité estimée a 1/2. Ainsi, pour k itérations, la probabilité que le test se trompe s'élève à 1/2<sup>k</sup>. En pratique, si n est inférieur à k, la probabilité est inférieure car plusieurs nombres a aléatoirement choisis seront les mêmes.
+
+### Test de Miller-Rabin
+
+Ce test est basé sur les mêmes propriétés que le premier, mais repose sur la décomposition de n impair suivante :
+
+> n-1 = 2<sup>s<sup>t avec t impair.
+
+> exemple avec n = 13 
+> n-1 = 12 = 2<sup>2<sup>3
+> s = 2 et t = 3.
+
+> Comme décrit, ces tests reposent sur l'exponentiation modulaire de a, d'où la nécessité de l'algorithme *Square and multiply* qui utilise la représentation binaire de l'exposant et réduit considérablement la complexité du calcul par rapport à une implémentation plus naïve.
+
+
 
 
