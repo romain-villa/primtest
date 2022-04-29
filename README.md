@@ -1,5 +1,5 @@
 Romain VILLA et Massina AMMAD - UVSQ
-[GitHub repository](https://github.com/romain-villa/test-primalite)
+[GitHub repository](https://github.com/romain-villa/primtest)
 
 # TEST DE PRIMALITE
 
@@ -11,5 +11,13 @@ Un algorithme d'exponentiation modulaire est également implémenté :
 
 Tout l'intérêt du programme est de pouvoir tester la primalité de grands nombres (quelques milliers de bits). Un fichier ```prime.txt``` contenant des nombres premiers de 32 à 49152 bits est mis à disposition pour tester le programme.
 
-## Objectif
+## Installation
 
+L'utilisateur doit disposer du compilateur GCC et avoir installé la librairie [GMP 6.2.1](https://gmplib.org/).
+Pour installer le programme, il faut décompresser l'archive et suivre les étapes suivantes :
+> ```./configure```
+> ```cd src```
+> ```make```
+Pour l'éxécuter:
+> ```./primtest n k```
+*avec n le nombre à tester et k le nombre d'itérations des algorithmmes*
