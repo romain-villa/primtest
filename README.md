@@ -30,7 +30,7 @@ Pour installer le programme, il faut décompresser l'archive et suivre les étap
 ```
 ~/primtest/src$ ./primtest n k
 ```
-*avec n le nombre à tester et k le nombre d'itérations des algorithmmes*
+*avec n le nombre à tester et k le nombre d'itérations des algorithmes*
 
 ### Contraintes
 
@@ -69,7 +69,9 @@ Par les mêmes propriétés que le test de Fermat, si le test renvoie composé l
 
 > Comme décrit, ces deux tests reposent sur l'exponentiation modulaire de a, d'où l'aspect fondamental de l'algorithme *square and multiply* qui utilise la représentation binaire de l'exposant et réduit considérablement la complexité du calcul par rapport à une implémentation plus naïve.
 
+## Temps d'exécution
 
+Une horloge permet de mesurer le temps d'exécution du programme en secondes. Les facteurs qui influencent ce dernier (autres que l'architecture de l'ordinateur utilisé) sont, en premier lieu le nombre k d'itération puis la taille du nombre n saisi. 
 
 
 
