@@ -1,4 +1,5 @@
 Romain VILLA et Massina AMMAD - UVSQ
+
 [GitHub repository](https://github.com/romain-villa/primtest)
 
 # TEST DE PRIMALITE
@@ -6,6 +7,7 @@ Romain VILLA et Massina AMMAD - UVSQ
 Ce programme est l'implémentation de deux tests de primalité probabilistes à l'aide de la librairie GNU Multiple Precision Arithmetic. Il s'agit des deux algorithmes suivants : 
 - Le test de Fermat 
 - Le test de Miller-Rabin
+
 Un algorithme d'exponentiation modulaire est également implémenté :
 - *Square and multiply*
 
