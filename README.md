@@ -16,8 +16,13 @@ Tout l'intérêt du programme est de pouvoir tester la primalité de grands nomb
 L'utilisateur doit disposer du compilateur GCC et avoir installé la librairie [GMP 6.2.1](https://gmplib.org/).
 Pour installer le programme, il faut décompresser l'archive et suivre les étapes suivantes :
 > ```./configure```
+
 > ```cd src```
+
 > ```make```
+
 Pour l'éxécuter:
+
 > ```./primtest n k```
+
 *avec n le nombre à tester et k le nombre d'itérations des algorithmmes*
